@@ -13,6 +13,13 @@ function getBiggestBlackSquare(A) {
 
     for (let i = 0; i < A.length; i++)
     {
+        if (minHeight < biggestSquare)
+        {
+            minHeight = A[i]
+            cutOffArray = []
+            continue
+        }
+
         if (A[i] > square && minHeight > square)
         {
             minHeight = A[i] <= minHeight ? A[i] : minHeight
@@ -54,13 +61,11 @@ function getBiggestBlackSquare(A) {
                         cutOffArray = cutOffArray.slice(minIndex + 1, cutOffArray.length)
                         cutOffArray.push(A[i])
                     }
-                    continue
                 }
                 else
                 {
                     square = 1
                     minHeight = A[i]
-                    continue
                 }
             }
         }

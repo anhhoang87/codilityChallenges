@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "My solutions for codility challenges",
   "main": "TheMatrix2021.js",
-  "dependencies": {
-    "jest": "^26.6.3"
-  },
+  "dependencies": {},
   "devDependencies": {
     "jest": "^26.6.3"
   },
