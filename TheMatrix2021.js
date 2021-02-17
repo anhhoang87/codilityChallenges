@@ -15,6 +15,7 @@ function getBiggestBlackSquare(A) {
     {
         if (minHeight < biggestSquare)
         {
+            square = 1
             minHeight = A[i]
             cutOffArray = []
             continue
