@@ -8,7 +8,7 @@ test("Everyone in same circle - can switch", () => {
     expect(solution(P, T, A, B)).toBe(true);
 })
 
-test("In a circle that can't switch", () => {
+test("Multiple groups and can't switch toy", () => {
     P = [2, 2, 1, 1, 1]
     T = [1, 1, 1, 2, 2]
     A = [0, 1, 2, 3]
@@ -45,7 +45,7 @@ test("In a circle that can't switch- 3", () => {
 })
 
 
-test("In a circle that can't switch- 4", () => {
+test("In a circle that can switch- 4", () => {
     let P = [ 1, 1, 1, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 2, 2, 1, 2, 1, 2, 1, 1, 2, 2 ]
     let T = [ 2, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 1, 2, 1, 2, 2, 1, 2, 1, 1, 1, 2, 1, 1, 2, 2, 2, 1, 2 ]
     let A = [ 12, 16, 2, 6, 0, 22, 24, 9, 13, 21, 3, 29, 14, 8, 23, 7, 8, 13, 21, 29, 0, 26, 25, 8, 11, 13, 2, 29, 8 ]
@@ -54,7 +54,7 @@ test("In a circle that can't switch- 4", () => {
     expect(solution(P, T, A, B)).toBe(true);
 })
 
-test("In a circle that can't switch- 5", () => {
+test("In a circle that can switch- 5", () => {
     let P = [ 2, 2, 2, 2, 2, 2, 2, 1, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 2 ]
     let T = [ 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2 ]
     let A = [ 8, 3, 19, 9, 30, 2, 22, 29, 23, 0, 21, 8, 10, 21, 6, 31, 1, 34, 27, 20, 15, 22, 4, 33, 14, 8, 22, 18, 4, 22, 12, 6, 1, 17 ]
@@ -63,7 +63,7 @@ test("In a circle that can't switch- 5", () => {
     expect(solution(P, T, A, B)).toBe(true);
 })
 
-test("In a circle that can't switch- 6", () => {
+test("In a circle that can switch- every one can be linked to each other", () => {
     let P = [ 2, 1, 1, 1, 1, 2, 2, 2, 1, 1, 1, 1, 1, 2, 1, 1, 1, 2, 1, 2, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1 ]
     let T = [ 1, 1, 1, 2, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 2, 1, 1, 1, 1, 1, 2, 2, 1, 1 ]
     let A = [ 1, 19, 10, 26, 13, 0, 14, 28, 11, 3, 13, 6, 28, 3, 25, 24, 7, 4, 20, 13, 10, 25, 12, 18, 11, 2, 24, 24, 16, 18, 22, 21, 15, 17, 4, 0, 16, 9, 22, 1 ]
@@ -73,7 +73,7 @@ test("In a circle that can't switch- 6", () => {
 })
 
 
-test("No one knows no one", () => {
+test("No one knows no one and people got wrong pet", () => {
     let A = []
     let B = []
     let P = [ 2, 1, 1, 2, 1, 1, 1, 2, 1, 2, 1, 1, 1, 1, 2 ]
